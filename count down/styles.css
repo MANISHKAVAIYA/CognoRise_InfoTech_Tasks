@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://source.unsplash.com/1920x1080/?nature");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#countdown {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h1 {
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1:hover {
+  color: #ffcc00;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px white);
+}
